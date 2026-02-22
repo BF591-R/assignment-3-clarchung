@@ -49,7 +49,7 @@ describe("affy_to_hgnc()", {
     expect_equal(response$hgnc_symbol, c("MT-ND1", "MT-TI", "MT-TM", "MT-ND2"))
   })
 })
-
+#
 describe("reduce_data()", {
   t_tibble <- tibble(probe = c("1_s_at", "2_s_at", "3_s_at"),
                      GSM1 = c(9.5, 7.6, 5.5),

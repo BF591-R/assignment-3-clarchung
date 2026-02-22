@@ -124,7 +124,7 @@ result_tib <- load_expression("data/example_intensity_data_subset.csv")
 result_tib # Display the initial rows of the data
 ```
 ## Filtering Rows with `filter_15()`
-
+#
 To effectively work with our slightly vast dataset, it's essential to filter out
 rows that don't meet certain criteria. The `filter_15()` function does precisely
 this by retaining rows where at least 15% of the values surpass a log2(15)
