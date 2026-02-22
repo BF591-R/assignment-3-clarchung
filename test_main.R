@@ -99,3 +99,4 @@ describe("convert_to_long()", {
     expect_true("sample" %in% colnames(long_format))
   })
 })
+
