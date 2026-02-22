@@ -91,7 +91,7 @@ affy_to_hgnc <- function(affy_vector) {
   library(biomaRt)
   library(dplyr)
   mart <- useEnsembl(biomart='ensembl', dataset='hsapiens_gene_ensembl')
-  probes <- affy_vector %>% pull(probe)
+  probes <- affy_vector[[1]]
   ids<- getBM(
     attributes = c("affy_hg_u133_plus_2", "hgnc_symbol"),
     filters = "affy_hg_u133_plus_2",
